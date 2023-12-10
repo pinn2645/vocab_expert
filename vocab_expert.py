@@ -7,7 +7,7 @@ import pandas as pd
 user_api_key = st.sidebar.text_input("OpenAI API key", type="password")
 
 client = openai.OpenAI(api_key=user_api_key)
-prompt = """"List the interesting words from the text delimited by triple backticks 
+prompt = """"List the interesting words from the text from user_input
     in a JSON array, one word per line.
     Each word should have 6 fields:
     - "Word" - the interesting words
